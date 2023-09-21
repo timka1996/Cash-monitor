@@ -235,8 +235,10 @@ function ordering(){
           color="orange"
           flat
           rounded
+          icon="visibility"
         >
-          <span i-carbon-edit text-15px />
+          <q-tooltip :offset="[0, 8]">{{ props.row.description }}</q-tooltip>
+
         </q-btn>
       </q-td>
     </template>
